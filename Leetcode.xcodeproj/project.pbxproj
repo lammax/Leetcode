@@ -15,6 +15,8 @@
 		13BF095427D5F224007DDF36 /* Leetcode.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 13BF095227D5F224007DDF36 /* Leetcode.xcdatamodeld */; };
 		13BF096227D5F3D1007DDF36 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BF096127D5F3D1007DDF36 /* MainViewModel.swift */; };
 		13BF096427D5F40D007DDF36 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BF096327D5F40D007DDF36 /* MainModel.swift */; };
+		13BF096727D5F53F007DDF36 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 13BF096527D5F53F007DDF36 /* LICENSE */; };
+		13BF096827D5F540007DDF36 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 13BF096627D5F53F007DDF36 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		13BF095327D5F224007DDF36 /* Leetcode.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Leetcode.xcdatamodel; sourceTree = "<group>"; };
 		13BF096127D5F3D1007DDF36 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		13BF096327D5F40D007DDF36 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		13BF096527D5F53F007DDF36 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		13BF096627D5F53F007DDF36 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,8 @@
 		13BF093B27D5F222007DDF36 = {
 			isa = PBXGroup;
 			children = (
+				13BF096527D5F53F007DDF36 /* LICENSE */,
+				13BF096627D5F53F007DDF36 /* README.md */,
 				13BF095A27D5F24D007DDF36 /* Lib */,
 				13BF094627D5F222007DDF36 /* Leetcode */,
 				13BF094527D5F222007DDF36 /* Products */,
@@ -177,7 +183,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13BF096727D5F53F007DDF36 /* LICENSE in Resources */,
 				13BF094F27D5F224007DDF36 /* Preview Assets.xcassets in Resources */,
+				13BF096827D5F540007DDF36 /* README.md in Resources */,
 				13BF094C27D5F224007DDF36 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
