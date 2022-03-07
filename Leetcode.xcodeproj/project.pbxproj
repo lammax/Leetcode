@@ -8,21 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		13BF094827D5F222007DDF36 /* LeetcodeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BF094727D5F222007DDF36 /* LeetcodeApp.swift */; };
-		13BF094A27D5F222007DDF36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BF094927D5F222007DDF36 /* ContentView.swift */; };
+		13BF094A27D5F222007DDF36 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BF094927D5F222007DDF36 /* MainView.swift */; };
 		13BF094C27D5F224007DDF36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13BF094B27D5F224007DDF36 /* Assets.xcassets */; };
 		13BF094F27D5F224007DDF36 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13BF094E27D5F224007DDF36 /* Preview Assets.xcassets */; };
-		13BF095127D5F224007DDF36 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BF095027D5F224007DDF36 /* Persistence.swift */; };
+		13BF095127D5F224007DDF36 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BF095027D5F224007DDF36 /* DBManager.swift */; };
 		13BF095427D5F224007DDF36 /* Leetcode.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 13BF095227D5F224007DDF36 /* Leetcode.xcdatamodeld */; };
+		13BF096227D5F3D1007DDF36 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BF096127D5F3D1007DDF36 /* MainViewModel.swift */; };
+		13BF096427D5F40D007DDF36 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BF096327D5F40D007DDF36 /* MainModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		13BF094427D5F222007DDF36 /* Leetcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leetcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13BF094727D5F222007DDF36 /* LeetcodeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetcodeApp.swift; sourceTree = "<group>"; };
-		13BF094927D5F222007DDF36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		13BF094927D5F222007DDF36 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		13BF094B27D5F224007DDF36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13BF094E27D5F224007DDF36 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		13BF095027D5F224007DDF36 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		13BF095027D5F224007DDF36 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		13BF095327D5F224007DDF36 /* Leetcode.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Leetcode.xcdatamodel; sourceTree = "<group>"; };
+		13BF096127D5F3D1007DDF36 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		13BF096327D5F40D007DDF36 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 		13BF093B27D5F222007DDF36 = {
 			isa = PBXGroup;
 			children = (
+				13BF095A27D5F24D007DDF36 /* Lib */,
 				13BF094627D5F222007DDF36 /* Leetcode */,
 				13BF094527D5F222007DDF36 /* Products */,
 			);
@@ -55,11 +60,9 @@
 		13BF094627D5F222007DDF36 /* Leetcode */ = {
 			isa = PBXGroup;
 			children = (
+				13BF095E27D5F3AF007DDF36 /* Screens */,
 				13BF094727D5F222007DDF36 /* LeetcodeApp.swift */,
-				13BF094927D5F222007DDF36 /* ContentView.swift */,
 				13BF094B27D5F224007DDF36 /* Assets.xcassets */,
-				13BF095027D5F224007DDF36 /* Persistence.swift */,
-				13BF095227D5F224007DDF36 /* Leetcode.xcdatamodeld */,
 				13BF094D27D5F224007DDF36 /* Preview Content */,
 			);
 			path = Leetcode;
@@ -71,6 +74,49 @@
 				13BF094E27D5F224007DDF36 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		13BF095A27D5F24D007DDF36 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				13BF095C27D5F2A8007DDF36 /* Managers */,
+				13BF095B27D5F28C007DDF36 /* DB */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		13BF095B27D5F28C007DDF36 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				13BF095227D5F224007DDF36 /* Leetcode.xcdatamodeld */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		13BF095C27D5F2A8007DDF36 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				13BF095027D5F224007DDF36 /* DBManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		13BF095E27D5F3AF007DDF36 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				13BF095F27D5F3BB007DDF36 /* Main */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		13BF095F27D5F3BB007DDF36 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				13BF094927D5F222007DDF36 /* MainView.swift */,
+				13BF096127D5F3D1007DDF36 /* MainViewModel.swift */,
+				13BF096327D5F40D007DDF36 /* MainModel.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +189,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13BF095127D5F224007DDF36 /* Persistence.swift in Sources */,
-				13BF094A27D5F222007DDF36 /* ContentView.swift in Sources */,
+				13BF096227D5F3D1007DDF36 /* MainViewModel.swift in Sources */,
+				13BF095127D5F224007DDF36 /* DBManager.swift in Sources */,
+				13BF096427D5F40D007DDF36 /* MainModel.swift in Sources */,
+				13BF094A27D5F222007DDF36 /* MainView.swift in Sources */,
 				13BF095427D5F224007DDF36 /* Leetcode.xcdatamodeld in Sources */,
 				13BF094827D5F222007DDF36 /* LeetcodeApp.swift in Sources */,
 			);
